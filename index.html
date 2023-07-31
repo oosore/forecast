@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Whether foreCast app</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="weather-body">
+      <img src="/icons/sun.gif" alt="Weather Image" class="weather-img">
+    </div>
+    <div class="cards">
+      <div class="weather-card">
+        <h1>weather</h1>
+        <div class="input-container">
+          <input type="text" placeholder="location" class="input-box" style="padding: 5px; text-align:
+          center; border-radius: 5px;">
+        </div>
+        <div class="input-container" id="inputLine">
+          <input id="zip" type="text" placeholder="Zip Code"
+            style="padding: 5px; text-align: center; border-radius: 5px;">
+        </div>
+        <div class="input-container">
+          <input id="searchBtn" type="button" value="Go" style="padding: 5px; border-radius: 5px;">
+        </div>
+        <div class="location-not-found">
+          <h1>Sorry, Location not found!!!</h1>
+          <img src="/icons/404.png" alt="404 Error">
+        </div>
+      </div>
+      <!-- <div id="status" class="main-container">
+        <div id="state" class="flex-container">
+          <div id="ws">
+            <h2>Wind Speed</h2>
+          </div>
+          <div id="hd">
+            <h2>Humidity</h2>
+          </div>
+          <div id="tp">
+            <h2>Temperature</h2>
+          </div>
+        </div>
+      </div>
+      <div class="state-container">
+        <div class="second-input">
+          <input class="ws" type="text" style="padding: 5px; text-align: center; border-radius: 5px;">
+          <input class="humidity" type="text" style="padding: 5px; text-align: center; border-radius: 5px;">
+          <input class="tp" type="text" style="padding: 5px; text-align: center; border-radius: 5px;">
+        </div>
+      </div> -->
+      <div class="weather-box">
+        <p class="temperature">0 <sup>°C</sup></p>
+        <p class="description">light rain</p>
+      </div>
+
+      <div class="weather-details">
+        <div class="humidity">
+          <img class="gif-img" src="icons/humidity.gif" alt="" style="width: 100px;">
+          <div class="text">
+            <span id="humidity">0%</span>
+            <p>Humidity</p>
+          </div>
+        </div>
+
+        <div class="wind">
+          <img class="gif-img" src="icons/wind.gif" alt="" style="width: 100px;">
+          <div class="text">
+            <span id="wind-speed">0Km/H</span>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="week-container">
+    <div class="week-card" id="week-card">
+      <!-- <img class="icons" src="icons/sun.gif" alt="" style="width:150px;"> -->
+      <div class="days" id="days">
+        <span>Mon</span>
+        <span>Tue</span>
+        <span>wed</span>
+        <span>thu</span>
+        <span>fri</span>
+        <span>Sat</span>
+        <span>Sun</span>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
